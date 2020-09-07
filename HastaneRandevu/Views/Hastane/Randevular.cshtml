@@ -1,0 +1,85 @@
+﻿
+@{
+    ViewBag.Title = "Randevular";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+@model HastaneRandevu.Models.Randevu
+
+    <div class="center-block"style="height:950px;">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                    <th scope="col">Randevu ID</th>
+                    <th scope="col">Doktor</th>
+                    <th scope="col">Hasta</th>
+                    <th scope="col">Tarih</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in (List<HastaneRandevu.Models.Randevu>)ViewBag.randevularlistesi)
+                {
+                <tr>
+
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <th>@item.RandevuID</th>           
+                    <td>@item.Doctor.DoctorName</td>
+                    <td>@item.User.UserName</td>
+                    <td>@item.DateTime</td>
+                </tr>
+                }
+
+            </tbody>
+        </table>
+        <div class="container text-center">
+            <button type="button" class="btn btn-info center-block" data-toggle="modal" data-target="#modalAddRandevu">
+                <i class="fa fa-registered" aria-hidden="true"></i>
+                Randevu Al
+            </button>
+        </div>
+    </div>
+
+
+
+    <div class="modal fade" id="modalAddRandevu" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h4 class="modal-title w-100 font-weight-bold text-info">Randevu Al</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form method="post" action="/Hastane/Randevu">
+                    <div class="modal-body mx-3">
+                        <div class="md-form mb-3 text-center">
+                            <i class="fa fa-user center-block" aria-hidden="true"></i>
+                            <label data-error="wrong" data-success="right" for="defaultForm-email">@Session["userName"]</label>
+                        </div>
+                        <div class="md-form mb-3">
+                            <i class="fa fa-user-md" aria-hidden="true"></i>
+                            <label data-error="wrong" data-success="right" for="defaultForm-email">Doktor</label>
+                            @Html.DropDownListFor(x => x.DoctorID, (List<SelectListItem>)ViewBag.dr, new { @class = "form-control" })
+                        </div>
+                        <div class="md-form mb-3">
+                            <label for="birthdaytime">Randevu Zamanı:</label>
+                            @Html.TextBoxFor(m => m.DateTime, new { PlaceHolder = "yyyy-mm-dd hh:mm:ss", @class = "form-control" })
+                        </div>
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                        <button class="btn btn-info">Randevuyu Oluştur</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>

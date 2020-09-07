@@ -1,0 +1,52 @@
+﻿
+@{
+    ViewBag.Title = "Iletisim";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+<div class="bg-light p-5" style="height:950px;">
+    <div class="container">
+        <div class="row">
+                <div class="col-md-6">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputName">İsim</label>
+                                <input type="Name" class="form-control" id="inputName" placeholder="İsim">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputSurname">Soyisim</label>
+                                <input type="Surname" class="form-control" id="inputSurname" placeholder="Soyisim">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="Comment">Mesajınız</label>
+                            <textarea class="form-control" rows="5" id="comment"></textarea>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputCity">Şehir</label>
+                                <input type="text" class="form-control" id="inputCity">
+                            </div>
+                    
+                            <div class="form-group col-md-2">
+                                <label for="inputZip">Posta Kodu</label>
+                                <input type="text" class="form-control" id="inputZip">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Gönder</button>
+                    </form>
+                </div>
+                
+                <div class="col-md-6">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d99637.68678901307!2d35.52791276220702!3d38.70224677317158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1str!2str!4v1594291331675!5m2!1str!2str" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+        </div>
+    </div>
+</div>
+
+    
+
+
+
+
+
