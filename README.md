@@ -80,7 +80,7 @@ Web uygulamasında bulunan bu sayfada hastanenin hizmet verdiği uzmanlıklar bu
 
 
 
-15. şekilde gösterilen iletişim sayfası, hastaların memnuniyetsizliklerini, şikayetlerini, sorularını vb. düşüncelerini hastane ile iletişime geçerek paylaşmak istemeleri durumunda mesaj gönderebilmeleri için tasarlanmıştır. Kullanıcıların mesaj göndermeden önce isim, soy isim, şehir ve posta kodu gibi bilgileri girmeleri gerekmektedir. Yine iletişim sayfası içerisinde bulunan Google haritalar kullanılarak hastanenin yeri rahatlıklar tüm kullanıcılar tarafından bulunabilir. Şekil 15’deki haritada gerçek bir hastanenin yeri işaretlenebilir. LayoutPage sayfası bu sayfaya da eklenmiştir.  
+hastaların memnuniyetsizliklerini, şikayetlerini, sorularını vb. düşüncelerini hastane ile iletişime geçerek paylaşmak istemeleri durumunda mesaj gönderebilmeleri için tasarlanmıştır. Kullanıcıların mesaj göndermeden önce isim, soy isim, şehir ve posta kodu gibi bilgileri girmeleri gerekmektedir. Yine iletişim sayfası içerisinde bulunan Google haritalar kullanılarak hastanenin yeri rahatlıklar tüm kullanıcılar tarafından bulunabilir. Şekil 15’deki haritada gerçek bir hastanenin yeri işaretlenebilir. LayoutPage sayfası bu sayfaya da eklenmiştir.  
 
 
 
